@@ -1,0 +1,485 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+    outline: none;
+    border: none;
+    text-transform: capitalize;
+    transition: all .2s linear;
+}
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    scroll-padding: 5rem;
+}
+section{
+    padding: 2rem 9%;
+}
+
+ 
+/*-------heading line---*/
+.heading{
+    text-align: center;
+    padding: 2.5rem;
+}
+.heading span{
+    font-size: 3.5rem;
+    background:rgb(211, 214, 15);
+    color:black;
+    border-radius: .5rem;
+    padding: .2rem 1rem;
+}
+/*---- header section----*/
+header{
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    background: gray;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 15px;
+}
+header .logo{
+   font-size: large;
+    color: black;
+    font-family: cursive;
+    background-color:orange;
+    border-radius: 10px;
+   padding: 3px;
+   margin: 3px;
+}
+
+header .navbar a{
+    color: #fff;
+    font-size: 2rem;
+    margin: 0.8rem;
+    text-transform:uppercase;
+    font-weight: bold;
+}
+header .navbar a:hover{
+    color:black
+}
+button{
+    border-radius: 5px;
+    color: #fff;
+    background-color: blue;
+    font-weight: bolder;
+    padding: 3px;
+    margin: 3px;
+    cursor: pointer;
+    font-size: large;
+}
+button:hover{
+    color:red;
+}
+#menu-bar{
+    color: #fff;
+    border: .1rem solid #fff;
+    border-radius: .5rem;
+    font-size: 3rem;
+    padding: .5rem 1.2rem;
+    cursor: pointer;
+    display: none;
+}
+header i{
+    font-size: 5rem;
+}
+   /* ----home page---------*/
+
+.home{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    position: relative;
+    z-index: 0;
+}
+.home .content{
+    text-align: center;
+}
+.home .content h5{
+    font-size:20px;
+    color:#fff;
+    text-transform: uppercase;
+    font-weight: bolder;
+    letter-spacing: 3px;
+}
+.home .content h1{
+    font-size:10rem;
+    color:#fff;
+    text-transform: uppercase;
+    text-shadow: 0 .3rem .5rem(0,0,0,.1);
+    padding: 20px;
+    font-weight: bolder;
+    letter-spacing: 3px;
+}
+.home .content p{
+    font-size:2rem;
+    color: #fff;
+    text-transform:lowercase;
+    padding: 10px;  
+}
+section .btn{
+    border-radius: 20px;
+    font-weight: bolder;
+}
+.home{
+    background:url(image/img.2.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.btn{
+    display: inline-block;
+    margin-top: 1rem;
+    background: orange;
+    color:black;
+    padding: .8rem 3rem;
+    border-radius: 2px;
+    cursor: pointer;
+    font-size: 1.7rem;
+    font-weight: bolder;
+}
+.btn:hover{
+    background: rgba(255, 165, 0, .2);
+    color: orange;
+}
+ /*------- packages------*/
+
+.package .box-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+.package .box-container .box{
+    flex: 1 1 30rem;
+    border-radius: .5rem;
+    border-color: black;
+}
+.package .box-container .box:hover{
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 75);
+}
+.package .box-container .box img{
+    height: 30rem;
+    width: 100%;
+    object-fit: cover;
+}
+.package .box-container .box .content{
+    padding: 2rem;
+}
+.package .box-container .box .content h2{
+    font-size: 2rem;
+    color: #333;
+}
+.package .box-container .box .content h2 i{
+    color:blue;
+    padding: .5rem;
+}
+.package .box-container .box .content p{
+    color:#666;
+    font-size: 1.7rem;
+    padding: 1rem 0;
+}
+.package .box-container .box .content .price{
+    font-size: 2rem;
+    color:black;
+    padding-top: 1rem;
+}
+.package .box-container .box .content .price span{
+    color:#666;
+    font-size: 1.7rem;
+    text-decoration: line-through;
+    padding-left: 1.5rem;
+}
+
+/*----services-----*/
+
+.services .box-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+.services .box-container .box{
+    flex: 1 1 30rem;
+    border-radius: .5rem;
+    padding: 1rem;
+    text-align: center;
+}
+.services .box-container .box i{
+    padding: 1rem;
+    font-size: 5rem;
+    color: orangered;
+}
+.services .box-container .box h2{
+    font-size: 2.5rem;
+    color: #333;
+}
+.services .box-container .box p{
+    font-size: 1.5rem;
+    color: #666;
+    padding: 1rem 0;
+}
+.services .box-container .box{
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, .4);
+}
+
+ /*------- gallery------*/
+
+ .gallery .box-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+ }
+ .gallery .box-container .box{
+    overflow: hidden;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, .4);
+    border: 3px groove #fff;
+    border-radius: .5rem;
+    flex: 1 1 30rem;
+    height: 25rem;
+    position: relative;
+ }
+ .gallery .box-container .box img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+ }
+ .gallery .box-container .box .content{
+    position: absolute;
+    top: -100%; left:0;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    background: rgba(0, 0, 0, .7);
+    padding: 2rem;
+    padding-top: 5rem;
+ }
+ .gallery .box-container .box:hover .content{
+    top: 0;
+ }
+ .gallery .box-container .box .content h2{
+    font-size: 2.5rem;
+    color: orange;
+ }
+ .gallery .box-container .box .content p{
+    font-size: 1.5rem;
+    color: #eee;
+    padding: .5rem 0;
+}
+
+/*-------contact-----*/
+.contact .row{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    align-items: center;
+}
+.contact .row .image{
+    flex: 1 1 35rem;
+}
+.contact .row .image img{
+    width: 100%;
+} 
+.contact .row form{
+    flex: 1 1 40rem;
+    padding: 2rem;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, .5);
+    border-radius: .5rem;
+}
+.contact .row form .inputbox{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.contact .row form .inputbox input, .contact .row form textarea{
+    width: 49%;
+    margin: 1rem 0;
+    padding: 1rem;
+    font-size: 1.7rem;
+    color: #333;
+    background:#fff;
+    text-transform: none;
+    border: .3rem solid rgba(0, 0, 0, .5);
+    text-transform: none;
+    border-radius: .5rem;
+}
+.contact .row form textarea{
+    height: 15rem;
+    resize: none;
+    width: 100%;
+}
+
+/*-------footer section-------*/
+.footer{
+    background: #333; 
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 15px; 
+}
+.footer .box-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+.footer .box-container .box{
+    padding: 1.5rem 0;
+    flex:1 1 25rem ;
+}
+.footer .box-container .box h3{
+    font-size: 2.5rem;
+    padding: .7rem 0;
+    color: #fff;
+}
+.footer .box-container .box p{
+    font-size: 1.5rem;
+    padding: .7rem 0;
+    color: #eee;
+}
+.footer .box-container .box a{
+    display: block;
+    font-size: 1.5rem;
+    padding: .7rem 0;
+    color: #eee;
+}
+.footer .box-container .box a:hover{
+    color: blue;
+    text-decoration: underline;
+}
+.footer .box-container .box i{
+    padding: 1rem;
+    font-size: 2rem;
+    color: orangered;
+}
+.star{
+    display: flex;
+    font-size: 15px;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    color: orangered;
+}
+
+
+
+    /* chatbar */
+
+    .chat-container{
+        position: fixed;
+        bottom: 150px;
+        right: 50px;
+        z-index: 999;
+        cursor: pointer;
+    }
+    .chatBtn {
+        position: fixed;
+        width: 45px;
+        height: 45px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        border: none;
+        background-color: #FFE53B; 
+        background-image: orange;
+        cursor: pointer;
+        padding-top: 3px;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.164);
+        position: relative;
+        background-size: 300%;
+        background-position: left;
+        transition-duration: 1s;
+        z-index: 999;
+        opacity: 1;
+        animation: slideLeft 1s ease forwards,floatImage 4s ease-in-out infinite ;
+        animation-delay: .5s ,1.5s;
+    
+      }
+      
+      .tooltip {
+        position: absolute;
+        top: -40px;
+        opacity: 0;
+        background-color: orange;
+        color: white;
+        padding: 5px 10px;
+        border-radius: 5px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition-duration: .5s;
+        pointer-events: none;
+        letter-spacing: 0.5px;
+      }
+      
+      .chatBtn:hover .tooltip {
+        opacity: 1;
+        transition-duration: .5s;
+      }
+      
+      .chatBtn:hover {
+        
+        background-position: right;
+        transition-duration: 1s;
+ 
+        background: rgba(255, 165, 0, .2)
+       
+
+      }
+      .chatBtn svg:hover{
+        fill: orange;
+      }
+
+
+  /* looged-msg */
+  .msg-contain{
+    position: fixed;
+    display: flex;
+    bottom: 250px;
+    right: 500px;
+    z-index: 999;
+    height: 60px;
+    width: 400px;
+    background: #fff;
+    border-radius: 2px;
+    box-shadow:  3px -3px 3px orange;
+    justify-content:center;
+    font-size: 20px;
+    font-weight: 600;
+    opacity: 0;
+    animation: slidedown 4s ease forwards  ;
+    animation-delay: .5s ,1.5s;
+  
+    
+}
+
+
+
+/* keyframes */
+
+@keyframes zoomIn{
+    30% {
+    opacity: 1;
+    transform: scale(1);
+    }
+    0% {
+    opacity: 0;
+    transform: scale(0);
+    }
+}
+
+
+@keyframes slidedown{
+    50% {
+    opacity: 1;
+    transform: translateY(10px);
+    }
+    0% {
+    opacity:0 ;
+    transform: translateY();
+    }
+  }
