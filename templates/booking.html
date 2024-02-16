@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>booking</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='booking.css') }}">
+
+</head>
+<body>
+    
+    <div class="placeorder" id="placeorder">
+        <h4>Booked Successfully</h4>
+        
+          <div class="checkbox-wrapper-12">
+            <div class="cbx">
+              <input checked="" type="checkbox" id="cbx-12">
+              <label for="cbx-12"></label>
+              <svg fill="none" viewBox="0 0 15 14" height="14" width="15">
+                <path d="M2 8.36364L6.23077 12L13 2"></path>
+              </svg>
+            </div>
+            
+            <svg version="1.1" xmlns="http://www.w3.org/2000/svg">
+              <defs>
+                <filter id="goo-12">
+                  <feGaussianBlur result="blur" stdDeviation="4" in="SourceGraphic"></feGaussianBlur>
+                  <feColorMatrix result="goo-12" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 22 -7" mode="matrix" in="blur"></feColorMatrix>
+                  <feBlend in2="goo-12" in="SourceGraphic"></feBlend>
+                </filter>
+              </defs>
+            </svg>
+          </div>
+        
+    </div>
+    <div class="container">
+        <div class="text">Enter your booking details</div>
+        <form action="/">
+            <div class="data">
+                <label for="Name">Name</label>
+                <input type="text" name="name" id="name" placeholder="Enter your name" required>
+            </div>
+            <div class="data">
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" placeholder="Enter your email id" required>
+            </div>
+            <div class="data">
+                <label for="check-in">check-in date</label>
+                <input type="date" name="check-in" id="check-in">
+            </div>
+            <div class="data">
+                <label for="check-out">check-out date</label>
+                <input type="date" name="check-out" id="check-out">
+            </div>
+            <div class="data">
+                <label for="Adult">Adults</label>
+                <input type="number" name="Adult" id="Adult" placeholder="Number of adults" required>
+            </div>
+            <div class="data">
+                <label for="Child">Children</label>
+                <input type="number" name="Child" id="Child" placeholder="Number of Children" required>
+            </div>
+            <button class="btn" onclick="placeorder()">Book now</button>
+        </form>
+    </div>
+
+    <script src="{{ url_for('static', filename='main.js') }}"></script>
+    
+</body>
+</html>

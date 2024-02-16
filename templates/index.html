@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AdventureTravel</title>
+    <link rel="shortcut icon" href="{{ url_for('static', filename='') }}image/logo.jpg" type="image/x-icon">
+    <!----font awesome cdn link-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!----css file link---->
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+            <!-- msg--part -->
+    <!-- <div class="msg-contain">
+        
+        {% with messages =get_flashed_messages(with_categories=true)%}
+        {% if messages %}
+                        {% for category ,message in messages %}
+                             Hi {{session["name"]}} <div class="alert alert-{{category}}" style="color: orange;">{{message}} </div>
+                        {%endfor %}
+              {% endif %}
+              {% endwith %}
+    </div>  -->
+ 
+    <!------header section------>
+    <header>
+        <div id="menu-bar" class="fas fa-bars"></div>
+        <a href="#" class="logo">AdventureTravel</a>
+        <nav class="navbar" >
+            <a href="#home">home</a>
+            <a href="#package">package</a>
+            <a href="#services">services</a>
+            <a href="#gallery">gallery</a>
+            <a href="#contact">contact</a>
+        </nav>
+       <a href="/login"><button>login</button></a>
+    </header>
+    
+    <!----home page---->
+    <section class="home" id="home">
+        <div class="content">
+            <h5>DISCOVER THE COLORFUL WORLD</h5>
+            <h1>NEW ADVENTURE</h1>
+            <a href="#" class="btn">DISCOVER MORE</a>
+        </div>
+    </section>
+    
+    <div class="chat-container">
+        <a href="#" class="chatBtn">
+          <svg
+            height="3em"
+            fill="black"
+            xml:space="preserve"
+            viewBox="0 0 1000 1000"
+            y="0px"
+            x="0px"
+            version="1.1"
+          >
+            <path
+              d="M881.1,720.5H434.7L173.3,941V720.5h-54.4C58.8,720.5,10,671.1,10,610.2v-441C10,108.4,58.8,59,118.9,59h762.2C941.2,59,990,108.4,990,169.3v441C990,671.1,941.2,720.5,881.1,720.5L881.1,720.5z M935.6,169.3c0-30.4-24.4-55.2-54.5-55.2H118.9c-30.1,0-54.5,24.7-54.5,55.2v441c0,30.4,24.4,55.1,54.5,55.1h54.4h54.4v110.3l163.3-110.2H500h381.1c30.1,0,54.5-24.7,54.5-55.1V169.3L935.6,169.3z M717.8,444.8c-30.1,0-54.4-24.7-54.4-55.1c0-30.4,24.3-55.2,54.4-55.2c30.1,0,54.5,24.7,54.5,55.2C772.2,420.2,747.8,444.8,717.8,444.8L717.8,444.8z M500,444.8c-30.1,0-54.4-24.7-54.4-55.1c0-30.4,24.3-55.2,54.4-55.2c30.1,0,54.4,24.7,54.4,55.2C554.4,420.2,530.1,444.8,500,444.8L500,444.8z M282.2,444.8c-30.1,0-54.5-24.7-54.5-55.1c0-30.4,24.4-55.2,54.5-55.2c30.1,0,54.4,24.7,54.4,55.2C336.7,420.2,312.3,444.8,282.2,444.8L282.2,444.8z"
+            ></path></svg><span class="tooltip">chatbot</span></a>
+      </div>
+ 
+    <!-----packages page---->
+    <section class="package" id="package">
+        <h1 class="heading">
+            <span>p</span>
+            <span>a</span>
+            <span>c</span>
+            <span>k</span>
+            <span>a</span>
+            <span>g</span>
+            <span>e</span>
+            <span>s</span>
+        </h1>
+        <div class="box-container">
+            <div class="box">
+                <img src="{{ url_for('static', filename='') }}image/goa.jpg" alt="">
+                <div class="content">
+                    <h2><i class="fas fa-map-marker-alt"></i>GOA</h2>
+                    <p>Embrace the Goa Vibe! Beaches, Culture & Adventure Await. Book Your Escape Today! </p>
+                    <div class="price">₹7999<span>₹9999</span></div>
+                    <div class="star">
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span><br>
+                    </div>
+                    <a href="/booking" class="btn">book now</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="{{ url_for('static', filename='') }}image/ladakh.jpg" alt="Ladakh Image">
+                <div class="content">
+                    <h2><i class="fas fa-map-marker-alt"></i>LADAKH</h2>
+                    <p>Ladakh Awaits! Explore the Land of High Passes. Book Your Adventure Today!</p>
+                    <div class="price">₹5999<span>₹8999</span></div>
+                    <div class="star">
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span><br>
+                    </div>
+                    <a href="/booking" class="btn">book now</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="{{ url_for('static', filename='') }}image/maldives.jpeg" alt="Lmaldives Image">
+                <div class="content">
+                    <h2><i class="fas fa-map-marker-alt"></i>MALDIVES</h2>
+                    <p>Maldives Marvel: Your Exclusive Island Hideaway Awaits.  Book Your Adventure Today!</p>
+                    <div class="price">₹12999<span>₹19999</span></div>
+                    <div class="star">
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span><br>
+                    </div>
+                    <a href="/booking" class="btn">book now</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="{{ url_for('static', filename='') }}image/agra.jpg" alt="agra Image">
+                <div class="content">
+                    <h2><i class="fas fa-map-marker-alt"></i>AGRA</h2>
+                    <p>Journey Through Time: Agra Edition! Book Now for a Historic Adventure</p>
+                    <div class="price">₹6999<span>₹12999</span></div>
+                    <div class="star">
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span><br>
+                    </div>
+                    <a href="/booking" class="btn">book now</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="{{ url_for('static', filename='') }}image/munnar.jpg" alt="munnar Image">
+                <div class="content">
+                    <h2><i class="fas fa-map-marker-alt"></i>MUNNAR</h2>
+                    <p>Munnar Unveiled: Your Nature's Canvas Awaits. Book Now for a One-of-a-Kind Experience.</p>
+                    <div class="price">₹9999<span>₹12999</span> </div>
+                    <div class="star">
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span><br>
+                    </div>
+                    <a href="/booking" class="btn">book now</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="{{ url_for('static', filename='') }}image/Ooty.jpg" alt="Ooty Image">
+                <div class="content">
+                    <h2><i class="fas fa-map-marker-alt"></i> OOTY</h2>
+                    <p>Discover Ooty's Delights! Your Unforgettable Journey Begins Here. Book Now.</p>
+                    <div class="price">₹4999<span>₹7999</span></div>
+                    <div class="star">
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star "></span>
+                        <span class="fa fa-star "></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span><br>
+                    </div>
+                    <a href="/booking" class="btn">book now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-----services page---->
+
+    <section class="services" id="services">
+        <h1 class="heading">
+            <span>s</span>
+            <span>e</span>
+            <span>r</span>
+            <span>v</span>
+            <span>i</span>
+            <span>c</span>
+            <span>e</span>
+            <span>s</span>
+        </h1>
+        <div class="box-container">
+            <div class="box">
+                <i class="fas fa-hotel"></i>
+                <h2>Affordable hotels</h2>
+                <p>Budget Bliss Awaits!<br>
+                    Explore our selection of affordable hotels offering comfort and convenience. Book your wallet-friendly stay today!</p>
+            </div>
+            <div class="box">
+                <i class="fas fa-utensils"></i>
+                <h2>Food and drinks </h2>
+                <p>Delight Your Senses!<br>
+                    Explore our tantalizing food and drink options. Reserve your spot today!"</p>
+            </div>
+            <div class="box">
+                <i class="fas fa-bullhorn"></i>
+                <h2>Safty guide</h2>
+                <p>Your Safety, Our Promise!<br>
+                    Discover our unique safety measures designed to ensure your peace of mind throughout your stay</p>
+            </div>
+            <div class="box">
+                <i class="fas fa-globe-asia"></i>
+                <h2>Around the world</h2>
+                <p> Globe in Your Hands!<br>
+                    Embark on a journey across continents with our diverse travel packages</p>
+            </div>
+            <div class="box">
+                <i class="fas fa-plane"></i>
+                <h2>Fastest travel</h2>
+                <p>Let-Set Go!<br>
+                    Explore our exclusive, lightning-fast travel options. Book now for unparalleled speed and convenience."</p>
+            </div>
+            <div class="box">
+                <i class="fas fa-hiking"></i>
+                <h2>Adventures</h2>
+                <p>Adventure Awaits!<br>
+                    Embark on adrenaline-pumping experiences with our thrilling adventure packages. Book now for unforgettable escapades</p>
+            </div>
+        </div>
+    </section>
+
+   <!-----gallery page---->
+
+   <section class="gallery" id="gallery">
+        <h1 class="heading">
+            <span>g</span>
+            <span>a</span>
+            <span>l</span>
+            <span>l</span>
+            <span>e</span>
+            <span>r</span>
+            <span>y</span>
+        </h1>
+        <div class="box-container">
+            <div class="box">
+                <img src="{{ url_for('static', filename='') }}image/gallery.1.jpg" alt="">
+                <div class="content">
+                    <h2>amazing places</h2>
+                    <p>Lorem ipsum dolor amet consecteturghjdshh dtgwg.Consectetur quaerat dolores deleniti a dolorum atque!</p>
+                </div>
+            </div>
+            <div class="box">
+                <img src="{{ url_for('static', filename='') }}image/gallery.2.jpg" alt="">
+                <div class="content">
+                    <h2>amazing places</h2>
+                    <p>Lorem ipsum dolor amet consecteturghjdshh dtgwg.Consectetur quaerat dolores deleniti a dolorum atque!</p>
+                </div>
+            </div>
+            <div class="box">
+                <img src="{{ url_for('static', filename='') }}image/gallery.3.jpg" alt="">
+                <div class="content">
+                    <h2>amazing places</h2>
+                    <p>Lorem ipsum dolor amet consecteturghjdshh dtgwg.Consectetur quaerat dolores deleniti a dolorum atque!</p>
+                </div>
+            </div>
+            <div class="box">
+                <img src="{{ url_for('static', filename='') }}image/gallery.4.jpg" alt="">
+                <div class="content">
+                    <h2>amazing places</h2>
+                    <p>Lorem ipsum dolor amet consecteturghjdshh dtgwg.Consectetur quaerat dolores deleniti a dolorum atque!</p>
+                </div>
+            </div>
+            <div class="box">
+                <img src="{{ url_for('static', filename='') }}image/gallery.5.jpg" alt="">
+                <div class="content">
+                    <h2>amazing places</h2>
+                    <p>Lorem ipsum dolor amet consecteturghjdshh dtgwg.Consectetur quaerat dolores deleniti a dolorum atque!</p>
+                </div>
+            </div>
+            <div class="box">
+                <img src="{{ url_for('static', filename='') }}image/gallery.6.jpg" alt="">
+                <div class="content">
+                    <h2>amazing places</h2>
+                    <p>Lorem ipsum dolor amet consecteturghjdshh dtgwg.Consectetur quaerat dolores deleniti a dolorum atque!</p>
+                </div>
+            </div>
+            <div class="box">
+                <img src="{{ url_for('static', filename='') }}image/gallery.7.jpg" alt="">
+                <div class="content">
+                    <h2>amazing places</h2>
+                    <p>Lorem ipsum dolor amet consecteturghjdshh dtgwg.Consectetur quaerat dolores deleniti a dolorum atque!</p>
+                </div>
+            </div>
+            <div class="box">
+                <img src="{{ url_for('static', filename='') }}image/gallery.8.jpg" alt="">
+                <div class="content">
+                    <h2>amazing places</h2>
+                    <p>Lorem ipsum dolor amet consecteturghjdshh dtgwg.Consectetur quaerat dolores deleniti a dolorum atque!</p>
+                </div>
+            </div>
+            <div class="box">
+                <img src="{{ url_for('static', filename='') }}image/gallery.9.jpg" alt="">
+                <div class="content">
+                    <h2>amazing places</h2>
+                    <p>Lorem ipsum dolor amet consecteturghjdshh dtgwg.Consectetur quaerat dolores deleniti a dolorum atque!</p>
+                </div>
+            </div>
+        </div>
+   </section>
+
+     <!-----contact page---->
+
+    <section class="contact" id="contact">
+        <h1 class="heading">
+            <span>c</span>
+            <span>o</span>
+            <span>n</span>
+            <span>t</span>
+            <span>a</span>
+            <span>c</span>
+            <span>t</span>
+        </h1>
+        <div class="row">
+            <div class="image">
+                <img src="{{ url_for('static', filename='') }}image/contact.jpg" alt="">
+            </div>
+            <form action="">
+                <div class="inputbox">
+                    <input type="text" placeholder="name" required>
+                    <input type="email" placeholder="email" required>
+                </div>
+                <div class="inputbox">
+                    <input type="number" placeholder="mobile number" required>
+                    <input type="text" placeholder="subject">
+                </div>
+                <textarea placeholder="message" name="" id="" cols="30" rows="10"></textarea>
+                <input type="submit" class="btn" value="send message">
+            </form>
+        </div>
+    </section>
+
+    <!------footer section----->
+    <section class="footer">
+        <div class="box-container">
+            <div class="box">
+                <h3>About us</h3>
+                <p>the Adventure Travel Trade Association is the largest global network of adventure travel leaders. Our community is made up of 30,000 individual guides, tour operators, lodges, travel advisors, tourism boards, destination marketing and management organizations.</p>
+            </div>
+            <div class="box">
+                <h3>branch locations</h3>
+                <a href="#">india</a>
+                <a href="#">USA</a>
+                <a href="#">France</a>
+                <a href="#">Dubai</a>
+            </div>
+            <div class="box">
+                <h3>quick links</h3>
+                <a href="#home">home</a>
+                <a href="#package">package</a>
+                <a href="#services">services</a>
+                <a href="#gallery">gallery</a>
+                <a href="#contact">contact</a>
+            </div>
+            <div class="box">
+                <h3>Follow us</h3>
+                <a href="#">facebook <i class="fa-brands fa-facebook"></i></a>
+                <a href="#">instagram <i class="fa-brands fa-square-instagram"></i></a>
+                <a href="#">twitter<i class="fa-brands fa-twitter"></i></a>
+                <a href="#">linkedin <i class="fa-brands fa-linkedin"></i></a>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
