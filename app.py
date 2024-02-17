@@ -68,3 +68,34 @@ def log():
 
 if __name__=="__main__":
     app.run(debug=True)
+
+
+
+@app.route('/goa')
+def goa():
+    return render_template("goa.html")
+
+
+@app.route('/ladakh')
+def ladakh():
+    return render_template("ladakh.html")
+
+
+@app.route('/maldives')
+def maldives():
+    return render_template("maldives.html")
+
+
+@app.route('/agra')
+def agra():
+    return render_template("agra.html")
+
+
+@app.route('/munnar')
+def munnar():
+    return render_template("munnar.html")
+
+
+@app.route('/ooty')
+def ooty():
+    return render_template("ooty.html")
