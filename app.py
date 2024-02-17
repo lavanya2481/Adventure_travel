@@ -99,3 +99,5 @@ def munnar():
 @app.route('/ooty')
 def ooty():
     return render_template("ooty.html")
+
+
