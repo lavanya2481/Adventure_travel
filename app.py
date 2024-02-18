@@ -100,4 +100,29 @@ def munnar():
 def ooty():
     return render_template("ooty.html")
 
+@app.route('/contact',methods =["GET","POST"])
+def contact():
+    if request.method =="POST":
+        try:
+            cname=request.form['cname']
+            cemail=request.form['cemail']
+            cmnumber=request.form['cmnumber']
+            csubject=request.form['csubject']
+            cmessage=request.form['cmessage']
+            sqlconnection= sqlite3.connect('travel.db')
+        
+            cur=sqlconnection.cursor()
+            cur.execute("insert into users(cname,cemail,cmnumber,csubject,cmessage)values(?,?,?,?,?)",(cname,cemail,cmnumber,csubject,cmessage))
+            sqlconnection.commit()
+            flash("Message has been sent","record")
+        except:
+             flash("Opps! Please Try Again","oops")
+             return redirect('/')
 
+        finally:
+             return redirect('/')
+             sqlconnection.close()
+           
+
+
+    return render_template('index.html')
