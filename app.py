@@ -44,6 +44,11 @@ def register():
 def booking():
     return render_template("booking.html")
 
+
+@app.route('/chat')
+def chat():
+    return render_template("chat.html")
+
 @app.route('/log',methods =["GET","POST"])
 def log():
     if request.method =="POST":
