@@ -68,12 +68,8 @@ Monitors the performance and health of the application, helping in proactive iss
 
 
 
-![image](https://github.com/lavanya2481/Adventure_travel/assets/153826226/c527a411-2499-4e77-a167-667b90fd4445)
-![image](https://github.com/lavanya2481/Adventure_travel/assets/153826226/955a3dbd-31fb-455b-8692-49b6faf5b341)
-![image](https://github.com/lavanya2481/Adventure_travel/assets/153826226/008f751c-0554-468e-a5f5-18717076b1ba)
-![image](https://github.com/lavanya2481/Adventure_travel/assets/153826226/b0724dcf-fe5b-408c-b7e5-bb5e95c5f761)
-![image](https://github.com/lavanya2481/Adventure_travel/assets/153826226/5c13c1bb-a92c-4daf-9e3b-288d1e3b32fe)
-![image](https://github.com/lavanya2481/Adventure_travel/assets/153826226/f42ff421-f6b2-4d45-83e7-04398f83b69e)
+![image](https://github.com/lavanya2481/Adventure_travel/assets/153826676/118932cb-ccca-473e-8781-897c125f853e)
+
 
 
 
