@@ -96,6 +96,9 @@ Azure's monitoring services are utilized to track the performance and health of 
 ![image](https://github.com/lavanya2481/Adventure_travel/assets/153826342/c6eb3693-9b83-403b-9793-4560c76aa05c)
 ![image](https://github.com/lavanya2481/Adventure_travel/assets/153826342/a6b5cd80-dfb6-4ccb-bffd-40990d81d1d3)
 
+## demo url
+https://adventuretravel1.azurewebsites.net/#home
+
 
 
 
