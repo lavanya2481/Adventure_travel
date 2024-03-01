@@ -1,4 +1,4 @@
-Adventure Travel
+Adventure Travel Web Application
 
 Overview
 
