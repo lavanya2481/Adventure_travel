@@ -1,57 +1,68 @@
-# Adventure_travel
-Adventure tourism activities are nature-based activities. 
+Adventure Travel
 
+Overview
 
+Welcome to Adventure Travel...
 
-# Adventure Travel 
+Adventure travel is an exhilarating journey that takes you beyond conventional tourism. It involves immersive experiences in diverse and challenging environments, encompassing activities such as hiking, trekking, water sports, and cultural exploration in off-the-beaten-path destinations. The focus is on embracing the unexpected and fostering a sense of adventure
 
-Welcome to Adventure Travel - a web application that allows users to explore and book thrilling adventure activities worldwide.
+Table of Contents
 
-## Table of Contents
-- [Home](#home)
-- [About](#about)
-- [Features](#features)
-- [Technologies Used](#technologies-used)
-- [Getting Started](#getting-started)
-- [Setup](#setup)
-- [Usage](#usage)
-- [Contributing](#contributing)
-- [License](#license)
+Technologies Used
 
-## About
+Team Members
 
-Adventure Travel  is a full-stack web application developed to provide users with a user-friendly platform to discover and book various adventure activities. The frontend is built using HTML, CSS, and JavaScript, while the backend is powered by Python Flask.
+Azure Services Integration
 
-## Features
+Contribution Guidelines
 
-- **Explore Adventures:** Browse a wide range of adventure activities and destinations.
-- **Booking System:** Easily reserve your next adventure with our intuitive booking system.
-- **User Accounts:** Create an account to manage bookings, save preferences, and track your adventure history.
-- **Ratings:** Read and contribute reviews to help others make informed decisions.
+Cloud Deployment
 
+Monitoring
 
-## Technologies Used
+Technologies Used
 
-- **Frontend:**
-  - HTML
-  - CSS
-  - JavaScript
+Frontend:
+HTML
 
-- **Backend:**
-  - Python Flask
-  - SQLite (or your preferred database)
+CSS
 
--**core services**
-  -App services
-  -Virtual network
-  - AI 
-  -Moniter
+JavaScript
 
--**contribution:**
-  1.E.sathish-FrontEnd
-  2.R.Dharushani-BackEnd,Voiceover
-  3.R.Lavanya-Cloud Services(App Services,Virtual Network,etc..)
-  4.B.Kiruthiga-Testing,Readme file
+Backend:
+Python
+
+Flask
+
+SQLite
+
+Team Members
+
+Lavanya Cloud Deployment
+
+Sathish Frontend Developer
+
+Dharushani Backend Developer
+
+Kiruthiga Tester
+
+Azure Services Integration:
+This project leverages various Azure services to ensure scalability, reliability, and performance.
+
+Resource Group:
+Organizes and manages Azure resources efficiently.
+
+Virtual Network:
+Provides a secure and isolated network environment for the project.
+
+Web App:
+Hosts the web application platform using Flask for the backend and HTML/CSS/JS for the frontend.
+
+Virtual Network Integration:
+Ensures secure communication between the web app and other Azure resources.
+
+Monitor:
+Monitors the performance and health of the application, helping in proactive issue resolution.
 
 
 
