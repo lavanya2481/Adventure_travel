@@ -70,6 +70,7 @@ Monitors the performance and health of the application, helping in proactive iss
 
 ![image](https://github.com/lavanya2481/Adventure_travel/assets/153826676/118932cb-ccca-473e-8781-897c125f853e)
 ![image](https://github.com/lavanya2481/Adventure_travel/assets/153826676/8499abe5-9707-4200-bf9e-aabf936b4dd1)
+![Uploading image.png…]()
 
 
 
